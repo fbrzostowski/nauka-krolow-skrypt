@@ -71,6 +71,9 @@ while i < len(lines):
     if answer.strip() == lines[i]:
         print("✅ Dobrze!")
         i += 1
+    elif answer.strip() == "goto":
+        i=int(input("line: "))
+        i = i - 1
     else:
         print(f"❌ Źle! Poprawna odpowiedź to:\n   {lines[i]}")
         print("🔁 Wracasz na początek!\n")
